@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Editar Información</title>
+  <style>
+  </style>
+  <script>
+    function mostrarFormulario() {
+      var formulario = document.getElementById("formulario");
+      var informacion = document.getElementById("informacion");
+      
+      formulario.style.display = "block";
+      informacion.style.display = "none";
+    }
+  </script>
+</head>
+<body>
+  <section class="perfil-usuario">
+    <h3>Editar Información</h3>
+    <div id="informacion">
+      <p>Código: TU_CÓDIGO</p>
+      <p>Correo electrónico: TU_CORREO_ELECTRÓNICO</p>
+      <p>Descripción: TU_DESCRIPCIÓN</p>
+      <p>Nombre: TU_NOMBRE</p>
+      <button onclick="mostrarFormulario()">Editar Información</button>
+    </div>
+    <div id="formulario" style="display: none;">
+      <form>
+        <div class="campo">
+          <label for="codigo">Código:</label>
+          <input type="text" id="codigo" name="codigo" value="TU_CÓDIGO">
+        </div>
+        <div class="campo">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" value="TU_CORREO_ELECTRÓNICO">
+        </div>
+        <div class="campo">
+          <label for="descripcion">Descripción:</label>
+          <textarea id="descripcion" name="descripcion">TU_DESCRIPCIÓN</textarea>
+        </div>
+        <div class="campo">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" value="TU_NOMBRE">
+        </div>
+        <div class="boton-guardar">
+          <button type="submit">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
